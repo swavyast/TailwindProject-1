@@ -14,7 +14,7 @@
     <div class="mx-0 my-0">
         <!--===========================MenuBar===========================-->
 
-        <div class="mx-auto p-1 flex shadow-sm shadow-white  bg-black">
+        <div class="mx-auto p-1 flex shadow-sm shadow-white  bg-black" id="headMenu">
             <div class="col-span-4 p-1">
                 <ul class="flex p-2">
                     <li class="mx-5 p-2 font-semibold"><a
@@ -61,14 +61,20 @@
 
         
         <!--===========================Script Test Bar===========================-->
+        <form action="logout" method="post" id="logOutForm"></form>
+        <button type="submit" id="myButton" class="bg-black p-2 mt-2 rounded-lg ring-2 ring-fuchsia-500  ml-10 me-auto text-center text-lime-500" form="logOutForm">Logout</button>
         <div class="bg-purple-500 pb-2 mx-auto flex">
-            
-            <button class="btn btn-primary w-24 bg-black p-2 mt-2 ml-10 me-auto text-center text-lime-500" onclick="funct1()">Function 1</button>
-            <button class="btn btn-primary w-24 bg-black p-2 mt-2 mr-5 text-center text-lime-500" onclick="funct2()">Function 2</button>
-            <button class="btn btn-primary w-24 bg-black p-2 mt-2 mr-5 text-center text-lime-500" onclick="funct3()">Function 3</button>
-            <button class="btn btn-primary w-24 bg-black p-2 mt-2 mr-10 text-center text-lime-500" onclick="funct4()">Function 4</button>
+            <button class="bg-black p-2 mt-2 rounded-lg ring-2 ring-fuchsia-500  ml-10 me-auto text-center text-lime-500" onclick="funct1()">Function 1</button>
+            <button class="bg-black p-2 mt-2 rounded-lg ring-2 ring-fuchsia-500 mr-5 text-center text-lime-500" onclick="funct2()">Function 2</button>
+            <button class="bg-black p-2 mt-2 rounded-lg ring-2 ring-fuchsia-500 mr-5 text-center text-lime-500" onclick="funct3()">Function 3</button>
+            <button class="bg-black p-2 mt-2 rounded-lg ring-2 ring-fuchsia-500 mr-5 text-center text-lime-500" onclick="funct7()">Alert Function</button>
+            <button class="bg-black p-2 mt-2 rounded-lg ring-2 ring-fuchsia-500 mr-5 text-center text-lime-500" onclick="funct4()">Print A Table</button>
+            <button class="bg-black p-2 mt-2 rounded-lg ring-2 ring-fuchsia-500 mr-5 text-center text-lime-500" onclick="funct5()">'For in' Loop Example</button>
+            <button class="bg-black p-2 mt-2 rounded-lg ring-2 ring-fuchsia-500 mr-10 text-center text-lime-500" onclick="funct6()">'For of' Loop Example</button>
         </div>
-        <div class="bg-rose-600 text-white font-medium text-center" id="printResult"></div>
+        <div class="bg-rose-600 text-white font-medium text-center min-h-56 py-5" id="printResult">
+            <p>My Console</p>
+        </div>
         <!--===========================Script Test Bar===========================-->
 
         <!--===========================Boxes===========================-->
