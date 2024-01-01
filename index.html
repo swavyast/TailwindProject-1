@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
     <title>You're Live</title>
 </head>
 
@@ -12,12 +13,17 @@
 
     <div class="mx-0 my-0">
         <!--===========================MenuBar===========================-->
-        <div class="mx-auto p-1 flex mt-1 shadow-sm shadow-white  bg-black">
+
+        <div class="mx-auto p-1 flex shadow-sm shadow-white  bg-black">
             <div class="col-span-4 p-1">
                 <ul class="flex p-2">
                     <li class="mx-5 p-2 font-semibold"><a
                             class="p-4 mt-2 hover:ring-emerald-600 relative z-30 inline-block h-20 w-20 rounded-full ring-2 ring-fuchsia-400 mx-auto text-center"
-                            href="index.html"><h3 class="text-white mt-2 -ml-1 p-1 font-extrabold first-letter:ring-1 first-letter:rounded-lg first-letter:p-2 last-of-type:first-letter:p-1 text-2xl">mL</h3></a></li>
+                            href="index.html">
+                            <h3
+                                class="text-white mt-1 -ml-1 p-1 font-extrabold first-letter:ring-1 first-letter:rounded-lg first-letter:p-2 last-of-type:first-letter:p-1 text-2xl ms-0">
+                                mL</h3>
+                        </a></li>
                 </ul>
             </div>
             <div class="col-auto mx-auto -top-10 max-w-min my-auto">
@@ -38,14 +44,31 @@
             </div>
             <div class="col-span-4 my-auto">
                 <ul class="flex p-2">
-                    <li class="mx-2 px-1"><a class="p-0 font-thin hover:ring-emerald-600 relative z-30 inline-block h-12 w-12 rounded-full ring-1 ring-fuchsia-400 mx-auto text-center"
-                            href="index.html"><h6 class="text-white mt-2 p-1">Login</h6></a></li>
-                    <li class="mx-2 px-1"><a class="p-0 px-2 font-extralight hover:ring-emerald-600 relative z-30 inline-block h-16 w-16 rounded-full ring-1 ring-fuchsia-400 text-center"
-                            href="index.html"><h6 class="text-white mt-5">Signup</h6></a></li>
+                    <li class="mx-2 px-1"><a
+                            class="p-0 font-thin hover:ring-emerald-600 relative z-30 inline-block h-12 w-12 rounded-full ring-1 ring-fuchsia-400 mx-auto text-center"
+                            href="index.html">
+                            <h6 class="text-white mt-2 p-1">Login</h6>
+                        </a></li>
+                    <li class="mx-2 px-1"><a
+                            class="p-0 px-2 font-extralight hover:ring-emerald-600 relative z-30 inline-block h-16 w-16 rounded-full ring-1 ring-fuchsia-400 text-center"
+                            href="index.html">
+                            <h6 class="text-white mt-5">Signup</h6>
+                        </a></li>
                 </ul>
             </div>
         </div>
         <!--===========================MenuBar===========================-->
+
+        
+        <!--===========================Script Test Bar===========================-->
+
+        <button class="btn btn-primary w-24 bg-black mx-auto p-2 mt-2 ml-10 text-center text-lime-500" onclick="funct1()">Function 1</button>
+        <button class="btn btn-primary w-24 bg-black mx-auto p-2 mt-2 ml-10 text-center text-lime-500" onclick="funct2()">Function 2</button>
+        <button class="btn btn-primary w-24 bg-black mx-auto p-2 mt-2 ml-10 text-center text-lime-500" onclick="funct3()">Function 3</button>
+        <!--===========================Script Test Bar===========================-->
+
+        <!--===========================Boxes===========================-->
+
         <div class="flex md:mx-auto">
             <div class="row-span-10 bg-current flex mx-auto mt-4 p-2">
                 <div class="col-span-4 mx-2 bg-red-500 p-2 ring-1 rounded-md">
@@ -74,6 +97,7 @@
                 </div>
             </div>
         </div>
+        <!--===========================Boxes===========================-->
     </div>
 
 </body>
