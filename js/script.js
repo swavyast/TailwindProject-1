@@ -31,3 +31,16 @@ function funct3(){
     // document.write(exp)
     exp==='true'? alert("You have selected true and since i'm telling it right, it's already magical, isn't it?"): alert("no magic here :/")
 }
+
+function funct4(){
+    const c = prompt("Enter a number", "e.g. : 1,2,3,4,5 ... rtc")
+    const a = []
+    for(i=1;i<=10;i++){
+        a[i] = c*i+'&nbsp';
+        //document.getElementById("printResult").innerText=(c*i+" ")
+
+    }
+    for(i=1;i<=10;i++){
+    document.getElementById("printResult").innerText="This method prints a table\nSince you have typed "+c+"\nit will print the table of "+c +"\nand table of "+c +" = "+a
+    }
+}
