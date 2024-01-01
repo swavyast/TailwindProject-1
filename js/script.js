@@ -103,17 +103,34 @@ function funct6(){
 
 function funct7(){
     
-    const al1 = confirm("Do you want to logout ?\n\n Click OK to continue.\n\n\t\t\t\t\t\t\t You can cancel if you want to logout.")
+    const al1 = confirm("Do you want to logout ?\n\n\t\t\t\t\t\t\t 'OK' to continue.\n\n\t\t\t\t\t\t\t 'Cancel' to logout.")
     if(!al1){
-        const logoutButton = document.createElement("button")
-        logoutButton.setAttribute("class", "bg-black p-2 m-2 mt-2 rounded-lg ring-2 ring-fuchsia-500  ml-10 me-auto text-center text-lime-500")
-        logoutButton.setAttribute("value", "logout")
-        logoutButton.setAttribute("form", "logOutForm")
-        logoutButton.innerHTML="Logout"
-        document.getElementById("myButton").click()
+        // const logoutButton = document.createElement("button")
+        // logoutButton.setAttribute("class", "bg-black p-2 m-2 mt-2 rounded-lg ring-2 ring-fuchsia-500  ml-10 me-auto text-center text-lime-500")
+        // logoutButton.setAttribute("value", "logout")
+        // logoutButton.setAttribute("form", "logOutForm")
+        // logoutButton.innerHTML="Logout"
+        // document.getElementById("myButton").click()
         //document.getElementById("headMenu").appendChild(logoutButton)
+        document.getElementById("logOutForm").submit()
+       // document.getElementById("myModal").replace("class", cls)
     }else{
 
     }
     
+}
+
+function modalPopUp(){
+    const cls = document.getElementById("myModal")
+    cls.setAttribute("class", "block relative z-10")
+   // cls.replace("class", "block relative z-10")
+    //document.getElementById("printResult").innerHTML +=cls
+    
+}
+
+function logoutButton(){
+    document.getElementById("logOutForm").submit()
+}
+function closeLogoutPopUp(){
+    document.getElementById("myModal").setAttribute("class", "hidden relative z-10")
 }
